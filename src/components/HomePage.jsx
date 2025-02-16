@@ -1,25 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import NewPage from "./NewPage"; // Import NewPage component
 
 const HomePage = () => {
   const [isExpanding, setIsExpanding] = useState(false);
   const [showNextPage, setShowNextPage] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [canScroll, setCanScroll] = useState(true); // Prevent multiple triggers
+  const [expandingFromTop, setExpandingFromTop] = useState(true); // Determines direction
 
   const handleScroll = (event) => {
+    if (!canScroll) return;
+
     const scrollDirection = event.deltaY > 0 ? "down" : "up";
 
     if (!isExpanding && !showNextPage && scrollDirection === "down") {
+      setCanScroll(false);
+      setExpandingFromTop(true); // Expanding circle comes from top
       setIsExpanding(true);
       setTimeout(() => {
         setShowNextPage(true);
         setIsExpanding(false);
+        setCanScroll(true);
       }, 1000);
     } else if (showNextPage && scrollDirection === "up") {
+      setCanScroll(false);
+      setExpandingFromTop(false); // Expanding circle comes from bottom
       setIsExpanding(true);
       setTimeout(() => {
         setShowNextPage(false);
         setIsExpanding(false);
+        setCanScroll(true);
       }, 1000);
     }
   };
@@ -40,30 +50,32 @@ const HomePage = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-6xl font-bold text-white animate-pulse">
-            Abdullah Tahir
+            Hi, I'm Abdullah Tahir
           </h1>
           <p className="text-gray-400 mt-4">Scroll down to enter</p>
         </motion.div>
       ) : (
-        <motion.div
-          className="absolute w-full h-full bg-gray-800 flex items-center justify-center text-white"
-          initial={{ y: "100vh" }}
-          animate={{ y: 0 }}
-          exit={{ y: "100vh" }} // Ensures it slides down when scrolling back up
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <h2 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-        </motion.div>
+        <NewPage /> // Renders the new page after animation
       )}
 
       {/* Expanding Circle Animation */}
       {isExpanding && (
         <motion.div
-          className="fixed top-1/2 left-1/2 bg-blue-600 rounded-full"
-          initial={{ width: 0, height: 0 }}
-          animate={{ width: "300vw", height: "300vw" }}
+          className="fixed left-1/2 bg-blue-600 rounded-full"
+          initial={{
+            width: 0,
+            height: 0,
+            top: expandingFromTop ? "50%" : "100%", // From top or bottom
+            transform: expandingFromTop
+              ? "translate(-50%, -50%)"
+              : "translate(-50%, 0)",
+          }}
+          animate={{
+            width: "300vw",
+            height: "300vw",
+            top: expandingFromTop ? "50%" : "100%",
+          }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          style={{ transform: "translate(-50%, -50%)" }}
         />
       )}
     </div>
