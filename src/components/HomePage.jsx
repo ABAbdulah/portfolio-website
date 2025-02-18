@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import NewPage from "./NewPage"; // Import NewPage component
+import Introduction from "./Introduction";
 
 const HomePage = () => {
   const [isExpanding, setIsExpanding] = useState(false);
@@ -55,7 +56,7 @@ const HomePage = () => {
           <p className="text-gray-400 mt-4">Scroll down to enter</p>
         </motion.div>
       ) : (
-        <NewPage /> // Renders the new page after animation
+       <Introduction/>
       )}
 
       {/* Expanding Circle Animation */}
