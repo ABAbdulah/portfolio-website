@@ -11,7 +11,7 @@ const projects = [
     description:
       "ARch360 bridges the gap between clients, architects, and construction specialists by making architectural ideas easier to understand and explore. It turns 3D models, like AutoCAD files, into interactive AR experiences, allowing clients to walk through and adjust designs for their future homes, workplaces, or buildings before construction even begins.",
     github: "https://github.com/ABAbdulah/ARch360",
-    media: ["src/assets/poster.jpg", "src/assets/solution.png", "src/assets/arch360.mp4"],
+    media: ["src/assets/poster.jpg", "src/assets/solution.png"],
     tools: "Unity, Vuforia, C#, Python, AutoCAD models, Firebase, ARCore, ARKit, Git, CI/CD",
   },
   {
