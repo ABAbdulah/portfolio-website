@@ -1,46 +1,55 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import NewPage from "./NewPage"; // Import NewPage component
 import Introduction from "./Introduction";
 
 const HomePage = () => {
   const [isExpanding, setIsExpanding] = useState(false);
   const [showNextPage, setShowNextPage] = useState(false);
-  const [canScroll, setCanScroll] = useState(true); // Prevent multiple triggers
-  const [expandingFromTop, setExpandingFromTop] = useState(true); // Determines direction
+  const [canScroll, setCanScroll] = useState(true);
+  const [expandingFromTop, setExpandingFromTop] = useState(true);
 
-  const handleScroll = (event) => {
-    if (!canScroll) return;
-
-    const scrollDirection = event.deltaY > 0 ? "down" : "up";
-
-    if (!isExpanding && !showNextPage && scrollDirection === "down") {
-      setCanScroll(false);
-      setExpandingFromTop(true); // Expanding circle comes from top
-      setIsExpanding(true);
-      setTimeout(() => {
-        setShowNextPage(true);
-        setIsExpanding(false);
-        setCanScroll(true);
-      }, 1000);
-    } else if (showNextPage && scrollDirection === "up") {
-      setCanScroll(false);
-      setExpandingFromTop(false); // Expanding circle comes from bottom
-      setIsExpanding(true);
-      setTimeout(() => {
-        setShowNextPage(false);
-        setIsExpanding(false);
-        setCanScroll(true);
-      }, 1000);
-    }
-  };
 
   useEffect(() => {
-    window.addEventListener("wheel", handleScroll);
-    return () => window.removeEventListener("wheel", handleScroll);
-  }, [isExpanding, showNextPage]);
+    const handleScroll = (event) => {
+      if (!canScroll) return;
+
+      const scrollDirection = event.deltaY > 0 ? "down" : "up";
+
+      // 🚀 Move to Introduction when scrolling down from HomePage
+      if (!showNextPage && scrollDirection === "down") {
+        setCanScroll(false);
+        setExpandingFromTop(true);
+        setIsExpanding(true);
+        setTimeout(() => {
+          setShowNextPage(true);
+          setIsExpanding(false);
+          setCanScroll(true);
+        }, 1000);
+      }
+      else if (showNextPage && scrollDirection === "up") {
+        setCanScroll(false);
+        setExpandingFromTop(false);
+        setIsExpanding(true);
+        setTimeout(() => {
+          setShowNextPage(false); // Move back to HomePage
+          setIsExpanding(false);
+          setCanScroll(true);
+        }, 1000);
+      }
+    };
+
+    // Attach event listener only when on HomePage
+    if (!showNextPage) {
+      window.addEventListener("wheel", handleScroll);
+    } 
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, [showNextPage, canScroll]);
 
   return (
+    
     <div className="relative w-screen h-screen bg-gray-900 overflow-hidden flex items-center justify-center">
       {/* Main Content */}
       {!showNextPage ? (
@@ -56,7 +65,7 @@ const HomePage = () => {
           <p className="text-gray-400 mt-4">Scroll down to enter</p>
         </motion.div>
       ) : (
-       <Introduction/>
+        <Introduction />
       )}
 
       {/* Expanding Circle Animation */}
@@ -66,7 +75,7 @@ const HomePage = () => {
           initial={{
             width: 0,
             height: 0,
-            top: expandingFromTop ? "50%" : "100%", // From top or bottom
+            top: expandingFromTop ? "50%" : "100%",
             transform: expandingFromTop
               ? "translate(-50%, -50%)"
               : "translate(-50%, 0)",
