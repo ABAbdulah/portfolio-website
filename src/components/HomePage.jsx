@@ -63,7 +63,7 @@ const HomePage = () => {
         {/* Right Section */}
         <div className="w-1/2 bg-black flex justify-center items-center">
           <img
-          src="src/assets/myprofile.jpg"
+          src="src/assets/myprofile12.jpg"
           alt="Abdullah Tahir"
           className="h-auto max-w-full object-cover sm:h-full sm:w-full"
         />
