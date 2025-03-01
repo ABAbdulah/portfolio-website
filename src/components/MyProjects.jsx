@@ -57,7 +57,7 @@ const MyProjects = () => {
                 <b>Tools & Technology:</b> {project.tools}
               </p>
             )}
-            <button className="say-hello-btn mt-6 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10">
+            <button className="say-hello-btn mt-6 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 archivo-variable">
             <a
               href={project.github}
               target="_blank"
