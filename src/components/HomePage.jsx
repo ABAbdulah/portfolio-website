@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../css/HomePage.css";
-import AboutMe from "./aboutMe";
+import AboutMe from "./AboutMe";
 
 const Navbar = () => (
   <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 text-gray-300 flex space-x-6 z-50 backdrop-blur-lg bg-black p-3 rounded-lg">
