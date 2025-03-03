@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaGithub } from "react
 import { Link } from "react-router-dom";
 import "../css/HomePage.css";
 import AboutMe from "./AboutMe";
-
+import profileImage from "../assets/myprofile12.jpg";
 const Navbar = () => (
   <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 text-gray-300 flex space-x-6 z-50 backdrop-blur-lg bg-black p-3 rounded-lg">
     
@@ -63,7 +63,7 @@ const HomePage = () => {
         {/* Right Section */}
         <div className="w-1/2 bg-black flex justify-center items-center">
           <img
-          src="src/assets/myprofile12.jpg"
+          src={profileImage}
           alt="Abdullah Tahir"
           className="h-auto max-w-full object-cover sm:h-full sm:w-full"
         />
