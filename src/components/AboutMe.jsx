@@ -4,8 +4,19 @@ import '../css/AboutMe.css'
 import { motion } from "framer-motion";
 import MyProjects from './MyProjects';
 import Experience from './Experience';
+import { Link } from 'react-router-dom';
+import CV from "../assets/Abdullah Tahir - Software Engineer.pdf";
 
 function AboutMe() {
+  
+ const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = CV; // Replace with the actual path to your CV file
+  link.download = "Abdullah Tahir - Software Engineer.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <>
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white p-6">
@@ -93,6 +104,13 @@ function AboutMe() {
           <div>
             <p className="font-semibold">Freelance</p>
             <p>Available</p>
+          </div><div>
+            <p className="font-semibold">My Resume</p> <button
+            onClick={handleDownload}
+            className="px-6 py-3mt-6 mt-3 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 archivo-variable transition-all duration-300"
+          >            
+            Download My Resume
+          </button>
           </div>
         </div>
 

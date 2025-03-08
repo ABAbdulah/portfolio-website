@@ -8,7 +8,7 @@ import arch360 from "../assets/arch360.mp4";
 import gameDev1 from "../assets/game1.png";
 import gameDev2 from "../assets/game2.png";
 import gameDev3 from "../assets/game3.png";
-
+import DownloadCV from "./DownloadCV";
 
 
 const projects = [
@@ -52,7 +52,6 @@ const MyProjects = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
   return (
     <div className="min-h-`screen bg-gradient-to-r from-white to-gray-100 text-white flex flex-col items-center p-10">
       <h1 className="text-4xl font-bold mb-10 archivo-black  text-green-600 ">My Projects</h1>
@@ -113,7 +112,7 @@ const MyProjects = () => {
           )}
         </div>
       ))}
-
+<DownloadCV />
     </div>
     
   );
