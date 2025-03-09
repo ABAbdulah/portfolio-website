@@ -18,16 +18,25 @@
 }
 @media screen and (max-width: 768px) {
     .blue-shade{
-        height: 25%;
-        width: 45%;
-        margin-bottom: 55%;
+        height: 45%;
+        width: 70%;
+        margin-bottom: 50%;
         margin-left: 30px;
 }
     
     .green-shade{
-        height: 25%;
-        width: 45%;
+        
+        height: 55%;
+        width: 85%;
         margin-bottom: 45%;
         margin-left: 50px;
+    }
+    .Image-bg{
+        margin-top: -60%;
+        margin-bottom: -20%;
+    }
+    .Image-bg2{
+        margin-top: -10%;
+        margin-bottom: -20%;
     }
 }

@@ -19,14 +19,9 @@ function AboutMe() {
 };
   return (
     <>
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white p-6">
-
-    <div className="flex flex-col md:flex-row items-center md:items-start bg-white min-h-screen p-6">
-      {/* Left Side - Image */}
-      <div className="relative flex justify-center items-center min-h-screen bg-white">
-      {/* Profile Image */}
-     
-
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen\ p-6">
+    <div className="Image-bg flex flex-col md:flex-row items-center md:items-start min-h-screen p-6">
+      <div className=" Image-bg2 relative flex justify-center items-center min-h-screen">
       {/* Green Box */}
       <motion.div
         initial={{ x: -200, opacity: 0 }}
@@ -107,7 +102,7 @@ function AboutMe() {
           </div><div>
             <p className="font-semibold">My Resume</p> <button
             onClick={handleDownload}
-            className="px-6 py-3mt-6 mt-3 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 archivo-variable transition-all duration-300"
+            className="px-6 py-3mt-6 mt-3 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 archivo-variable transition-all duration-300 w-60"
           >            
             Download My Resume
           </button>

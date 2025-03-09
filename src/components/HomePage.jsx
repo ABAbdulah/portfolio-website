@@ -46,7 +46,7 @@ const HomePage = () => {
       {/* Main Content */}
       <div className="flex h-screen">
         {/* Left Section */}
-        <div className="w-1/2 bg-gradient-to-r from-white to-gray-100 flex flex-col justify-center p-12">
+        <div className="name-container w-1/2 bg-gradient-to-r flex flex-col justify-center p-12">
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[300px] h-[200px] bg-gradient-to-r from-blue-500 to-yellow-300 opacity-30 blur-3xl rounded-full"></div>
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[600px] h-[700px] bg-gradient-to-r from-blue-500 to-yellow-300 opacity-30 blur-3xl rounded-full"></div>
 
@@ -61,7 +61,7 @@ const HomePage = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 bg-black flex justify-center items-center">
+        <div className="w-1/2 bg-black flex justify-center items-center profile-container">
           <img
           src={profileImage}
           alt="Abdullah Tahir"
