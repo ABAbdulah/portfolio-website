@@ -39,7 +39,7 @@ const SocialIcons = () => (
 
 const HomePage = () => {
   return (
-    <div className="relative h-screen overflow-y-auto">
+    <div className=" homepage relative h-screen overflow-y-auto">
       {/* <Navbar /> */}
       <SocialIcons />
       

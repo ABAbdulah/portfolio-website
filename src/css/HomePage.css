@@ -65,9 +65,8 @@
     .name-container {
       margin-top: 10px;
       order: 2;
-      animation: none;
     }  /* Disable float animation on mobile */
-    .animate-float {
+    .name-container .animate-float {
       animation: none !important;
     }
   }
