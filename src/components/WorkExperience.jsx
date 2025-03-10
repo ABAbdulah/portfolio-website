@@ -24,6 +24,7 @@ const experiences = [
     tools: "Python, Jupyter notebook",
     // No media for this project
   },
+  
 ];
 function WorkExperience() {
     const settings = {

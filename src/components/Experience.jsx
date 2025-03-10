@@ -19,7 +19,7 @@ function Experience() {
       >
         <h3 className="text-2xl font-bold text-gray-800">Experience</h3>
         <div className="mt-4">
-          <div className="border-l-4 border-green-500 pl-4 mb-4">
+        <div className="border-l-4 border-green-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Software Engineer Intern</h4>
             <p className="text-gray-600">FAIR (Football and AI Research) | Remote | 2025</p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
@@ -28,8 +28,15 @@ function Experience() {
                 <li className="mt-1">Worked on database migration using Python and MongoDB, ensuring seamless data transfer.</li>
                 <li className="mt-1">Assisted in REST API development, improving backend functionality and integration.</li>
             </ol>
+          </div> <div className="border-l-4 border-green-500 pl-4 mb-4">
+            <h4 className="text-xl font-semibold text-gray-700">Video Editor</h4>
+            <p className="text-gray-600">Yahesa Consultin Inc. | Remote | 2023-2024</p>
+            <p className="text-gray-500 mt-1">Location: London, Uk</p>
+            <ol className="list-disc pl-8 text-gray-700">
+                <li className="mt-1">Using Adobe Premiere Pro and Adobe PhotoShop I edited Videos and designed Thumbnails for the YouTube channel and social media accounts.</li>
+            </ol>
           </div>
-          
+
         </div>
       </motion.div>
 

@@ -64,7 +64,7 @@ const MyProjects = () => {
           {/* Left Section - Text */}
           <div className="md:w-1/2 w-full p-6">
             <h1 className="text-4xl font-bold mb-0 archivo-black mb-2 text-green-950">{project.title}</h1>
-            {project.shortTitle && <h5 className=" text-black text-2xl font-bold  mb-5  text-center">{project.shortTitle}</h5>}
+            {project.shortTitle && <h5 className=" text-black text-2xl font-bold  mb-5  text-left">{project.shortTitle}</h5>}
             <p className="text-black  text-justify archivo-variable mb-4">
               <b>Project Description: </b> {project.description}
             </p>
