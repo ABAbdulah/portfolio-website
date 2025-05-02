@@ -28,7 +28,7 @@ function AboutMe() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="green-shade absolute -bottom-6 left-12 w-48 h-48 bg-green-400 rounded-lg z-0 animate-pulse"
+        className="green-shade absolute bottom-0 left-[3rem] w-48 h-48 bg-green-400 rounded-lg z-0 animate-pulse"
       ></motion.div>
 
       {/* Blue Box */}
@@ -37,8 +37,8 @@ function AboutMe() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
         viewport={{ once: true }}
-        className=" blue-shade absolute -bottom-12 -left-12 w-64 h-64 bg-blue-100 rounded-lg z-0 animate-float"
-      ></motion.div>
+        className="blue-shade absolute bottom-6 left-0 w-64 h-64 bg-blue-100 rounded-lg z-0 animate-float"
+        ></motion.div>
        <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }} // Triggers when in viewport
@@ -47,12 +47,12 @@ function AboutMe() {
         className="relative"
       >
         <img
-          src={profileImg}
-          alt="Abdullah"
-          className="Profile-Img relative z-10 rounded-lg w-[30rem] h-100 object-cover shadow-lg animate-float"
-        />
+        src={profileImg}
+        alt="Abdullah"
+        className="Profile-Img relative z-10 rounded-lg w-[26rem] h-[30rem] object-cover shadow-lg animate-float"
+      />
       </motion.div>
-    </div>
+      </div>
 
       {/* Right Side - Information */}
       <div className="md:ml-12 text-left max-w-lg mt-12">
@@ -63,7 +63,7 @@ function AboutMe() {
         <p className="text-gray-600 mt-3 archivo-variable">
         A problem-solver at heart, I specialize in crafting efficient and scalable digital solutions. With experience in game development, AI research, and full-stack projects, I turn ideas into engaging and impactful experiences.        </p>
         <p className="text-gray-600 mt-3 archivo-variable">
-          Currently a Software Engineering Intern at FAIR and an undergraduate at FAST-NUCES.
+          An undergraduate at FAST-NUCES.
         </p>
 
         {/* Info Grid */}
@@ -78,7 +78,7 @@ function AboutMe() {
           </div>
           <div>
             <p className="font-semibold">Age</p>
-            <p>21 Years</p>
+            <p>22 Years</p>
           </div>
           <div>
             <p className="font-semibold">Email</p>

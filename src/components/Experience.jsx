@@ -21,12 +21,13 @@ function Experience() {
         <div className="mt-4">
         <div className="border-l-4 border-green-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Software Engineer Intern</h4>
-            <p className="text-gray-600">FAIR (Football and AI Research) | Remote | 2025</p>
+            <p className="text-gray-600">FAIR (Football and AI Research) | Remote | Nov, 2024 to April, 2025</p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
             <ol className="list-disc pl-8 text-gray-700">
-                <li className="mt-1">Worked on responsive and user-friendly frontend designs using React.js (MERN stack).</li>
-                <li className="mt-1">Worked on database migration using Python and MongoDB, ensuring seamless data transfer.</li>
-                <li className="mt-1">Assisted in REST API development, improving backend functionality and integration.</li>
+                <li className="mt-1">Improved front-end experience using React.js, with performance tweaks like code-splitting and lazy loading to enhance load times.</li>
+                <li className="mt-1">Contributed to REST API development, optimizing response times and backend efficiency.</li>
+                <li className="mt-1">Migrated over 2GB of player and match data across 5 major football leagues in MongoDB with zero downtime.</li>
+                <li className="mt-1">Scraped and mapped data for over 10,000 players from a third-party platform to match structured API data.</li>
             </ol>
           </div> <div className="border-l-4 border-green-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Video Editor</h4>
