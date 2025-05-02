@@ -11,7 +11,7 @@ import game1 from "../assets/game1.png";
 import game2 from "../assets/game2.png";
 import game3 from "../assets/game3.png";
 
-import arch360Video from "../assets/arch360.mov";
+// import arch360Video from "../assets/arch360.mov";
 import FYPstandee from "../assets/FYP-standee.png";
 const projects = [
   {
