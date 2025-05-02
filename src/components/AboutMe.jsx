@@ -56,7 +56,7 @@ function AboutMe() {
 
       {/* Right Side - Information */}
       <div className="md:ml-12 text-left max-w-lg mt-12">
-        <p className="text-green-600 font-semibold">About Me</p>
+        <h1 className="text-green-600 font-semibold">About Me</h1>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
           I  turn ideas into reality<br /> with code.
         </h1>

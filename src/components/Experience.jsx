@@ -21,7 +21,7 @@ function Experience() {
         <div className="mt-4">
         <div className="border-l-4 border-green-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Software Engineer Intern</h4>
-            <p className="text-gray-600">FAIR (Football and AI Research) | Remote | Nov, 2024 to April, 2025</p>
+            <p className="text-gray-600">FAIR (Football and AI Research) | Remote | November 2024 -  April 2025</p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
             <ol className="list-disc pl-8 text-gray-700">
                 <li className="mt-1">Improved front-end experience using React.js, with performance tweaks like code-splitting and lazy loading to enhance load times.</li>
@@ -31,7 +31,7 @@ function Experience() {
             </ol>
           </div> <div className="border-l-4 border-green-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Video Editor</h4>
-            <p className="text-gray-600">Yahesa Consultin Inc. | Remote | 2023-2024</p>
+            <p className="text-gray-600">Yahesa Consultin Inc. | Remote | June 2023 – February 2024 </p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
             <ol className="list-disc pl-8 text-gray-700">
                 <li className="mt-1">Using Adobe Premiere Pro and Adobe PhotoShop I edited Videos and designed Thumbnails for the YouTube channel and social media accounts.</li>

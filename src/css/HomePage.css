@@ -1,3 +1,8 @@
+/* in your global css or body */
+body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 640px) {
     .flex.h-screen {
       flex-direction: column;

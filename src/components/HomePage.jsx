@@ -48,14 +48,14 @@ const HomePage = () => {
         {/* Left Section */}
         <div className="name-container w-1/2 bg-gradient-to-r flex flex-col justify-center p-12">
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[300px] h-[200px] bg-gradient-to-r from-blue-500 to-yellow-300 opacity-30 blur-3xl rounded-full"></div>
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[600px] h-[700px] bg-gradient-to-r from-blue-500 to-yellow-300 opacity-30 blur-3xl rounded-full"></div>
+        <div className="hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 w-[600px] h-[700px] bg-gradient-to-r from-blue-500 to-yellow-300 opacity-30 blur-3xl rounded-full"></div>
 
           <h1 className="archivo-black text-7xl font-bold text-gray-800 relative z-10 animate-float">Abdullah</h1>
           <h1 className="archivo-black text-7xl font-bold text-gray-800 relative z-10 animate-float">Tahir</h1>
           <p className="text-gray-600 mt-4 text-lg relative z-10">Software Engineer</p>
-          <a href="https://www.linkedin.com/in/ababdullah216/">
+          <a href="https://calendly.com/meet-abdullah-tahir/one-one/">
           <button className="say-hello-btn mt-6 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 animate-pulse">
-            Say Hello
+            Lets Meet!
           </button>
           </a>
         </div>
