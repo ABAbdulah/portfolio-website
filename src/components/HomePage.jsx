@@ -7,9 +7,9 @@ import profileImage from "../assets/myprofile12.jpg";
 const Navbar = () => (
   <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 text-gray-300 flex space-x-6 z-50 backdrop-blur-lg bg-black p-3 rounded-lg">
     
-    <a href="#" className="hover:text-green-400">Home</a>
-    <a href="#" className="hover:text-green-400">About</a>
-    <button className="hover:text-green-400">
+    <a href="#" className="hover:text-blue-400">Home</a>
+    <a href="#" className="hover:text-blue-400">About</a>
+    <button className="hover:text-blue-400">
       <Link to="/Myproject">Projects</Link>
     </button>
     <a href="/Myproject" className="hover:text-green-400">Projects</a>
@@ -22,13 +22,13 @@ const Navbar = () => (
 const SocialIcons = () => (
   <div className="fixed right-10 bottom-10 flex flex-col space-y-4 text-gray-700 z-50 animate-float">
   <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
-    <FaFacebookF className="cursor-pointer hover:text-green-400 text-2xl" />
+    <FaFacebookF className="cursor-pointer hover:text-blue-400 text-2xl" />
   </a>
   <a href="https://github.com/ABAbdulah" target="_blank" rel="noopener noreferrer">
-    <FaGithub className="cursor-pointer hover:text-green-400 text-2xl" />
+    <FaGithub className="cursor-pointer hover:text-blue-400 text-2xl" />
   </a>
   <a href="https://www.linkedin.com/in/ababdullah216/" target="_blank" rel="noopener noreferrer">
-    <FaLinkedinIn className="cursor-pointer hover:text-green-400 text-2xl" />
+    <FaLinkedinIn className="cursor-pointer hover:text-blue-400 text-2xl" />
   </a>
   {/* <a href="https://www.youtube.com/c/your-channel" target="_blank" rel="noopener noreferrer">
     <FaYoutube className="cursor-pointer hover:text-green-400 text-2xl" />
@@ -53,10 +53,14 @@ const HomePage = () => {
           <h1 className="archivo-black text-7xl font-bold text-gray-800 relative z-10 animate-float">Abdullah</h1>
           <h1 className="archivo-black text-7xl font-bold text-gray-800 relative z-10 animate-float">Tahir</h1>
           <p className="text-gray-600 mt-4 text-lg relative z-10">Software Engineer</p>
+    
+
           <a href="https://calendly.com/meet-abdullah-tahir/one-one/">
-          <button className="say-hello-btn mt-6 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 animate-pulse">
-            Lets Meet!
-          </button>
+         <button className="say-hello-btn mt-6 bg-blue-600 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-800 relative z-10">
+  Let's Meet!
+</button>
+
+
           </a>
         </div>
 

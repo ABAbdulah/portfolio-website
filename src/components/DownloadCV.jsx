@@ -4,7 +4,7 @@ const DownloadCV = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = CV; // Replace with the actual path to your CV file
-    link.download = "Abdullah Tahir - Software Engineer.pdf";
+    link.download = "Abdullah Tahir - MERN stack developer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

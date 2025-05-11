@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import MyProjects from './MyProjects';
 import Experience from './Experience';
 import { Link } from 'react-router-dom';
-import CV from "../assets/Abdullah Tahir - Software Engineer.pdf";
+import CV from "../assets/Abdullah Tahir - MERN stack developer.pdf";
 
 function AboutMe() {
   
  const handleDownload = () => {
   const link = document.createElement("a");
   link.href = CV; // Replace with the actual path to your CV file
-  link.download = "Abdullah Tahir - Software Engineer.pdf";
+  link.download = "Abdullah Tahir - MERN stack developer.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -28,7 +28,7 @@ function AboutMe() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="green-shade absolute bottom-0 left-[3rem] w-48 h-48 bg-green-400 rounded-lg z-0 animate-pulse"
+        className="green-shade absolute bottom-0 left-[3rem] w-48 h-48 bg-blue-900 rounded-lg z-0 animate-pulse"
       ></motion.div>
 
       {/* Blue Box */}
@@ -56,7 +56,7 @@ function AboutMe() {
 
       {/* Right Side - Information */}
       <div className="md:ml-12 text-left max-w-lg mt-12">
-        <h1 className="text-green-600 font-semibold">About Me</h1>
+        <h1 className="archivo-black text-2xl text-blue-800 font-bold ">About Me</h1>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
           I  turn ideas into reality<br /> with code.
         </h1>
@@ -80,9 +80,8 @@ function AboutMe() {
             <p className="font-semibold">Age</p>
             <p>22 Years</p>
           </div>
-          <div>
-            <p className="font-semibold">Email</p>
-            <p>ababdullah216@gmail.com</p>
+          <div className="w-full">
+            <p className="break-words">ababdullah216@gmail.com</p>
           </div>
           <div>
             <p className="font-semibold archivo-variable">Occupation</p>
@@ -102,7 +101,7 @@ function AboutMe() {
           </div><div>
             <p className="font-semibold">My Resume</p> <button
             onClick={handleDownload}
-            className="px-6 py-3mt-6 mt-3 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10 archivo-variable transition-all duration-300 w-60"
+            className="px-6 py-3mt-6 mt-3 bg-blue-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-700 relative z-10 archivo-variable transition-all duration-300 w-60"
           >            
             Download My Resume
           </button>
@@ -110,7 +109,7 @@ function AboutMe() {
         </div>
 
         {/* Signature */}
-        <p className="ballet-regular mt-6 text-green-600 text-xl font-semibold italic">Abdullah Tahir</p>
+        {/* <p className="ballet-regular mt-6 text-green-600 text-xl font-semibold italic">Abdullah Tahir</p> */}
       </div>
     </div>
     </div>

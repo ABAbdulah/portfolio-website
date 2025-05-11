@@ -89,7 +89,7 @@ const ProjectCard = ({ project, onClick }) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-green-800 mb-1">{project.title}</h3>
+        <h3 className="text-xl font-bold text-blue-800 mb-1">{project.title}</h3>
         <p className="text-sm text-gray-600 mb-3">{project.shortTitle}</p>
         <p className="text-gray-700 text-sm mb-4 line-clamp-2">{project.description}</p>
         <div className="flex justify-between items-center">
@@ -97,7 +97,7 @@ const ProjectCard = ({ project, onClick }) => {
             {project.tools && project.tools.split(",").slice(0, 2).join(", ")}
             {project.tools && project.tools.split(",").length > 2 ? "..." : ""}
           </span>
-          <button className="flex items-center text-green-600 hover:text-green-800">
+          <button className="flex items-center text-blue-600 hover:text-blue-800">
             <span className="mr-1 text-sm">View</span>
             <ArrowRight size={16} />
           </button>
@@ -141,13 +141,13 @@ const ProjectDetail = ({ project, onBack }) => {
     <div className="max-w-4xl mx-auto py-10 px-4">
       <button 
         onClick={onBack}
-        className="mb-6 text-green-600 hover:text-green-800 flex items-center"
+        className="mb-6 text-blue-600 hover:text-blue-800 flex items-center"
       >
         <ArrowLeft className="mr-2" size={18} />
         Back to Projects
       </button>
       
-      <h1 className="text-4xl font-bold text-green-800 mb-2">{project.title}</h1>
+      <h1 className="text-4xl font-bold text-blue-800 mb-2">{project.title}</h1>
       <h2 className="text-xl text-gray-700 mb-6">{project.shortTitle}</h2>
       
       {/* Featured image/thumbnail */}
@@ -162,13 +162,13 @@ const ProjectDetail = ({ project, onBack }) => {
       )}
       
       <div className="prose max-w-none">
-        <h3 className="text-2xl font-semibold text-green-700 mb-2">Project Description</h3>
+        <h3 className="text-2xl font-semibold text-blue-700 mb-2">Project Description</h3>
         <p className="text-gray-800 mb-6">{project.fullDescription}</p>
         
         {/* Media Gallery Section */}
         {project.media && project.media.length > 0 && (
           <div className="my-8">
-            <h3 className="text-2xl font-semibold text-green-700 mb-4">Project Gallery</h3>
+            <h3 className="text-2xl font-semibold text-blue-700 mb-4">Project Gallery</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.media.map((item, index) => (
                 <MediaItem key={index} item={item} />
@@ -177,7 +177,7 @@ const ProjectDetail = ({ project, onBack }) => {
           </div>
         )}
         
-        <h3 className="text-2xl font-semibold text-green-700 mb-2">Tools & Technologies</h3>
+        <h3 className="text-2xl font-semibold text-blue-700 mb-2">Tools & Technologies</h3>
         <p className="text-gray-800 mb-6">{project.tools}</p>
         
         {(project.github || project.Video) && (
@@ -186,7 +186,7 @@ const ProjectDetail = ({ project, onBack }) => {
               href={project.github || project.Video}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg inline-flex items-center"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg inline-flex items-center on hover:scale-105 transition-transform duration-300"
             >
               {project.github ? "View on GitHub" : "See the Video"}
               <ArrowRight className="ml-2" size={18} />
@@ -219,10 +219,9 @@ const MyProjects = () => {
     <div className="min-h-screen bg-gradient-to-r from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-green-700 mb-2">My Projects</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            A collection of my work across various technologies and domains.
-            Click on any project to learn more about it.
+          <h1 className="text-4xl font-bold archivo-black text-blue-800 mb-2">My Projects</h1>
+          <p className="text-gray-800 max-w-4xl mx-auto">
+            A collection of my work across various technologies and domains. Click on any project to learn more about it.
           </p>
         </div>
         
@@ -237,7 +236,7 @@ const MyProjects = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <button className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg flex items-center mx-auto">
+          <button className="bg-blue-600 hover:bg-blue-800 text-white py-3 px-6 rounded-lg flex items-center mx-auto on hover:scale-105 transition-transform duration-300">
             <Download size={18} className="mr-2" />
             Download CV
           </button>

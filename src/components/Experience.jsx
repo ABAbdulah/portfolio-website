@@ -7,7 +7,7 @@ function Experience() {
 
           <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8">
      
-          <h1 className="text-4xl font-bold mt-14 archivo-black  text-green-600 ">My Education and Experience</h1>
+          <h1 className="text-4xl font-bold mt-14 archivo-black  text-blue-800 ">My Education and Experience</h1>
 
       {/* Experience Section */}
       <motion.div
@@ -19,7 +19,7 @@ function Experience() {
       >
         <h3 className="text-2xl font-bold text-gray-800">Experience</h3>
         <div className="mt-4">
-        <div className="border-l-4 border-green-500 pl-4 mb-4">
+        <div className="border-l-4 border-blue-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Software Engineer Intern</h4>
             <p className="text-gray-600">FAIR (Football and AI Research) | Remote | November 2024 -  April 2025</p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
@@ -29,7 +29,7 @@ function Experience() {
                 <li className="mt-1">Migrated over 2GB of player and match data across 5 major football leagues in MongoDB with zero downtime.</li>
                 <li className="mt-1">Scraped and mapped data for over 10,000 players from a third-party platform to match structured API data.</li>
             </ol>
-          </div> <div className="border-l-4 border-green-500 pl-4 mb-4">
+          </div> <div className="border-l-4 border-blue-500 pl-4 mb-4">
             <h4 className="text-xl font-semibold text-gray-700">Video Editor</h4>
             <p className="text-gray-600">Yahesa Consultin Inc. | Remote | June 2023 – February 2024 </p>
             <p className="text-gray-500 mt-1">Location: London, Uk</p>
