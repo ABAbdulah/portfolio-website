@@ -57,7 +57,7 @@ const HomePage = () => {
 
           <a href="https://calendly.com/meet-abdullah-tahir/one-one/">
          <button className="say-hello-btn mt-6 bg-blue-600 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-800 relative z-10">
-  Let's Meet!
+  Let's Talk!
 </button>
 
 
