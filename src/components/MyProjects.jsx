@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight, ArrowLeft, Download, Import } from "lucide-react";
+import CV from "../assets/Abdullah Tahir - MERN stack developer.pdf";
 
 // Import your actual assets
 // NOTE: When implementing this code, make sure these paths are correct
@@ -200,6 +201,14 @@ const ProjectDetail = ({ project, onBack }) => {
 };
 
 const MyProjects = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = CV; // Replace with the actual path to your CV file
+    link.download = "Abdullah Tahir - MERN stack developer.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);}
+
   const [selectedProject, setSelectedProject] = useState(null);
   
   const handleProjectClick = (project) => {
@@ -236,9 +245,11 @@ const MyProjects = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <button className="bg-blue-600 hover:bg-blue-800 text-white py-3 px-6 rounded-lg flex items-center mx-auto on hover:scale-105 transition-transform duration-300">
-            <Download size={18} className="mr-2" />
-            Download CV
+          <button
+            onClick={handleDownload}
+            className="px-6 py-3mt-6 mt-3 bg-blue-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-700 relative z-10 archivo-variable transition-all duration-300 w-60"
+          >            
+            Download My Resume
           </button>
         </div>
       </div>

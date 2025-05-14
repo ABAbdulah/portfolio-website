@@ -99,7 +99,8 @@ function AboutMe() {
             <p className="font-semibold">Freelance</p>
             <p>Available</p>
           </div><div>
-            <p className="font-semibold">My Resume</p> <button
+            <p className="font-semibold">My Resume</p> 
+            <button
             onClick={handleDownload}
             className="px-6 py-3mt-6 mt-3 bg-blue-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-700 relative z-10 archivo-variable transition-all duration-300 w-60"
           >            
