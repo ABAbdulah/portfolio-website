@@ -21,7 +21,7 @@ const Navbar = () => (
 
 const SocialIcons = () => (
   <div className="fixed right-10 bottom-10 flex flex-col space-y-4 text-gray-700 z-50 animate-float">
-  <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.facebook.com/ababdullah216" target="_blank" rel="noopener noreferrer">
     <FaFacebookF className="cursor-pointer hover:text-blue-400 text-2xl" />
   </a>
   <a href="https://github.com/ABAbdulah" target="_blank" rel="noopener noreferrer">
