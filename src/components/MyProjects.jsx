@@ -67,7 +67,7 @@ const projects = [
     shortTitle: "MERN Project",
     description: "A MERN-based web app for managing cricket matches with team registrations, real-time scoring, and player ratings. inspired by stumps",
     fullDescription: "Cric360 is a full-featured cricket match management web application built using the MERN stack. The platform streamlines the entire cricket match process—allowing users to register teams, book matches, and track scores in real time. Engineered dynamic features such as real-time score updates and player rating displays to boost user engagement during live matches. Designed and implemented a scalable backend using Node.js, Express, and MongoDB, exposing RESTful APIs to support efficient matchmaking and data management. Optimized backend logic for performance and scalability, ensuring a smooth user experience even under increased load.",
-    github: "",
+    github: "https://github.com/haris-sohail/Cric360.git",
     thumbnail: thumbnail2,
     media: [
       // { type: "image", src: thumbnail1, alt: "Project 4 Screenshot" }
