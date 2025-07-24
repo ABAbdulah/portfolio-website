@@ -11,7 +11,11 @@ import thumbnail4 from "../assets/game-thmb.png";
 import game1 from "../assets/game1.png";
 import game2 from "../assets/game2.png";
 import game3 from "../assets/game3.png";
-
+import arthumb from "../assets/ar-thumb.png";
+import meta from "../assets/meta.png";
+import meta2 from "../assets/meta2.png";
+import elclub from "../assets/elclub.png";
+import div from "../assets/div.png";
 // import arch360Video from "../assets/arch360.mov";
 import FYPstandee from "../assets/FYP-standee.png";
 const projects = [
@@ -73,6 +77,56 @@ const projects = [
       // { type: "image", src: thumbnail1, alt: "Project 4 Screenshot" }
     ],
     tools: "React, TailwindCSS, JavaScript",
+  }, {
+   id: "ElClub",
+    title: "ElClub",
+    shortTitle: "MERN Project",
+    description: "A React-based e-commerce platform focused on the pet dogs niche, offering a seamless experience for customers to shop and manage orders.",
+    fullDescription: "ElClub is a modern e-commerce web application tailored specifically for dog owners and pet product businesses. Built with the MERN stack, the platform provides a one-stop solution for pet lovers to purchase everything their dogs need — from food and toys to grooming accessories. The application includes features like product listings, cart management, order tracking, and a user-friendly admin interface for managing inventory and orders. Designed using React.js and Tailwind CSS, the interface is responsive, intuitive, and optimized for all devices.",
+    github: "https://elclubllc.com", // Replace if you have a separate repo for ElClub
+    thumbnail: elclub,
+    media: [
+      // { type: "image", src: thumbnail1, alt: "ElClub Project Screenshot" }
+    ],
+    tools: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS, JavaScript",
+
+  }, {
+        id: "Meta Store",
+    title: "Meta Store",
+    shortTitle: "MERN Project",
+    description: "A responsive web app for purchasing premium plans like Netflix, Spotify, and more.",
+    fullDescription: "Meta Store is a React.js-based web application that allows users to conveniently purchase premium subscriptions for popular platforms such as Netflix, Spotify, and others. Designed with a mobile-first approach using Tailwind CSS, the UI is clean, fast, and responsive across all devices. The platform focuses on delivering a smooth user experience, with categorized plans, easy checkout flow, and modern design aesthetics.",
+    thumbnail: meta,
+    tools: "React.js, Tailwind CSS, JavaScript, Responsive Design, UX/UI Design",
+    media: [
+      { type: "image", src: meta2, alt: "Metastore.pk" }
+    ],
+    github: "https://www.metastore.pk/"
+  }, {
+    id: "AfterRealism",
+    title: "After Realism",
+    shortTitle: "Next.js Platform",
+    description: "A content-driven platform built with Next.js, enhanced with bug fixes, custom branding, and blog content.",
+    fullDescription: "After Realism is a modern content platform developed using Next.js. Our work involved resolving critical bugs, optimizing performance, and implementing responsive UI improvements. We designed a new logo to reflect the brand's identity and contributed original content to its blog section. The platform offers a clean, fast, and SEO-friendly experience for users, built with scalability and content flexibility in mind.",
+    thumbnail: arthumb, // Replace with your actual thumbnail image reference
+    media: [
+      // { type: "image", src: thumbnail1, alt: "After Realism Screenshot" }
+    ],
+    tools: "Next.js, React, Tailwind CSS, TypeScript, Vercel, Figma, Content Writing",
+    github:"http://afterrealism.com/"
+  },
+   {
+    id: "Divlynx",
+    title: "Divlynx",
+    shortTitle: "Agency Website",
+    description: "A personal agency website built with React.js and custom CSS to attract and convert clients.",
+    fullDescription: "Divlynx is the official portfolio and service platform for showcasing our work and attracting clients. Built using React.js and handcrafted CSS, the website is lightweight, fast, and fully responsive. It highlights core services, past projects, and a contact flow designed to convert leads into clients. Divlynx serves as the central hub for inbound client traffic and establishes a strong online presence for our brand.",
+    thumbnail: div, // Replace with your actual thumbnail reference
+    media: [
+      // { type: "image", src: thumbnail1, alt: "Divlynx Website Screenshot" }
+    ],
+    tools: "React.js, Custom CSS, JavaScript, Responsive Design, UI/UX",
+    github: "https://divlynx-inc-website.web.app/"
   },
 ];
 
@@ -189,7 +243,7 @@ const ProjectDetail = ({ project, onBack }) => {
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg inline-flex items-center on hover:scale-105 transition-transform duration-300"
             >
-              {project.github ? "View on GitHub" : "See the Video"}
+              {project.github ? "View on GitHub or live" : "See the Video"}
               <ArrowRight className="ml-2" size={18} />
             </a>
           </div>
@@ -244,14 +298,27 @@ const MyProjects = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
+       <div className="mt-16 text-center ">
           <button
             onClick={handleDownload}
-            className="px-6 py-3mt-6 mt-3 bg-blue-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-700 relative z-10 archivo-variable transition-all duration-300 w-60"
-          >            
+            className="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 w-60"
+          >
             Download My Resume
           </button>
         </div>
+        <div className="mt-2 text-center">
+           <a
+            href="https://www.upwork.com/freelancers/~01df738c8d1dffd708?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition-all duration-300 w-60">
+              Hire me on UpWork!
+            </button>
+          </a>
+          </div>
+
+        
       </div>
     </div>
   );

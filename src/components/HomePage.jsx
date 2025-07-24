@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../css/HomePage.css";
 import AboutMe from "./AboutMe";
 import profileImage from "../assets/myprofile12.jpg";
+import { FaUpwork } from "react-icons/fa6";
 const Navbar = () => (
   <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 text-gray-300 flex space-x-6 z-50 backdrop-blur-lg bg-black p-3 rounded-lg">
     
@@ -30,6 +31,9 @@ const SocialIcons = () => (
   <a href="https://www.linkedin.com/in/ababdullah216/" target="_blank" rel="noopener noreferrer">
     <FaLinkedinIn className="cursor-pointer hover:text-blue-400 text-2xl" />
   </a>
+   <a href="https://www.upwork.com/freelancers/~01df738c8d1dffd708?mp_source=share" target="_blank" rel="noopener noreferrer">
+    <FaUpwork className="cursor-pointer hover:text-blue-400 text-2xl" />
+  </a>
   {/* <a href="https://www.youtube.com/c/your-channel" target="_blank" rel="noopener noreferrer">
     <FaYoutube className="cursor-pointer hover:text-green-400 text-2xl" />
   </a> */}
@@ -55,13 +59,23 @@ const HomePage = () => {
           <p className="text-gray-600 mt-4 text-lg relative z-10">Software Engineer</p>
     
 
-          <a href="https://calendly.com/meet-abdullah-tahir/one-one/">
+          <a href="https://calendly.com/meet-abdullah-tahir/one-one/"
+          target="_blank"
+            rel="noopener noreferrer">
          <button className="say-hello-btn mt-6 bg-blue-600 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-800 relative z-10">
-  Let's Talk!
-</button>
-
-
+          Let's Talk!
+        </button>
           </a>
+         <a
+            href="https://www.upwork.com/freelancers/~01df738c8d1dffd708?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="say-hello-btn mt-1.5 bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 relative z-10">
+              Hire me on UpWork!
+            </button>
+          </a>
+
         </div>
 
         {/* Right Section */}
